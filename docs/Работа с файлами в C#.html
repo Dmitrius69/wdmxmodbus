@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://alekseygulynin.ru/rabota-s-failami-c/ -->
+<html lang="ru-RU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="twitter-wjs" async="" src="./Работа с файлами в C#_files/widgets.js.Без названия"></script><script type="text/javascript" async="" src="./Работа с файлами в C#_files/watch.js.Без названия"></script><script src="./Работа с файлами в C#_files/jquery.min.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/jquery.mousewheel-3.0.4.pack.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/jquery.fancybox-1.3.4.pack.js.Без названия"></script>
+<link rel="stylesheet" type="text/css" href="./Работа с файлами в C#_files/jquery.fancybox-1.3.4.css" media="screen">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа с файлами в C#</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://alekseygulynin.ru/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://alekseygulynin.ru/wp-content/themes/zeedynamic/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="PHP, JavaScript, HTML5, C#, VBA » Лента" href="https://alekseygulynin.ru/feed/">
+<link rel="alternate" type="application/rss+xml" title="PHP, JavaScript, HTML5, C#, VBA » Лента комментариев" href="https://alekseygulynin.ru/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="PHP, JavaScript, HTML5, C#, VBA » Лента комментариев к «Работа с файлами в C#»" href="https://alekseygulynin.ru/rabota-s-failami-c/feed/">
+<link rel="stylesheet" id="wordpress-popular-posts-css" href="./Работа с файлами в C#_files/wpp.css" type="text/css" media="all">
+<link rel="stylesheet" id="themezee_zeeDynamic_stylesheet-css" href="./Работа с файлами в C#_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="themezee_zeeDynamic_flexslider-css" href="./Работа с файлами в C#_files/flexslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="themezee_default_font-css" href="./Работа с файлами в C#_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="themezee_default_title_font-css" href="./Работа с файлами в C#_files/css(1)" type="text/css" media="all">
+<meta property="vk:app_id" content="4396053">
+<script type="text/javascript" src="./Работа с файлами в C#_files/jquery.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/jquery-migrate.min.js.Без названия"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var vkapi = {"wpurl":"https:\/\/alekseygulynin.ru"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/callback.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/jquery.flexslider-min.js.Без названия"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themezeeSliderParams = {"animation":"fade","speed":"6000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/slider.js.Без названия"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themezeeLoadPostsParams = {"loadMoreText":"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0431\u043e\u043b\u044c\u0448\u0435 \u0437\u0430\u043f\u0438\u0441\u0435\u0439","loadingText":"\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u0437\u0430\u043f\u0438\u0441\u0435\u0439...","noMoreText":"\u041d\u0435\u0442 \u0431\u043e\u043b\u044c\u0448\u0435 \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u0434\u043b\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438.","startPage":"1","maxPages":"47","nextLink":null};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/posts.js.Без названия"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var themezeeNavigationParams = {"menuTitle":"\u041c\u0435\u043d\u044e"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/navigation.js.Без названия"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://alekseygulynin.ru/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://alekseygulynin.ru/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="https://alekseygulynin.ru/?p=1128">
+<!-- Kama WP Smiles -->
+<style type="text/css">.sm_list{ z-index:9999; position:absolute; bottom:5px; left:5px; }
+.sm_container{
+	display:none; position:absolute; top:0px; left:0px; width:400px; z-index:1001; background:#fff; padding:5px;
+	-moz-border-radius:6px; border-radius:6px; -khtml-border-radius:6px; -webkit-border-radius:6px;
+	-moz-box-shadow:#D0D0D0 0 0 4px;-webkit-box-shadow:#D0D0D0 0 0 4px;-khtml-box-shadow:#D0D0D0 0 0 4px;box-shadow:#D0D0D0 0 0 4px;
+}
+.sm_container .smiles_button{ cursor:pointer; width:50px; height:30px; display:inline-block; background-position:center center; background-repeat:no-repeat; }
+.sm_container .smiles_button:hover{ opacity:0.7; }
+.wp-smiley{ vertical-align:middle; }
+		</style><script type="text/javascript">
+	window._wp_rp_static_base_url = 'https://wprp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "https://alekseygulynin.ru/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.4.3';
+	window._wp_rp_post_id = '1128';
+	window._wp_rp_num_rel_posts = '5';
+	window._wp_rp_blog_id = '424195';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = '%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%D0%BC%D0%B8+%D0%B2+C%23';
+	window._wp_rp_post_tags = ['c%23', '%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B+c%23', '1', 'file', 'visual', '2', 'strong', 'studio', 'titl', 'a'];
+	window._wp_rp_remote_recommendations = false;
+	window._wp_rp_promoted_content = true;
+	window._wp_rp_traffic_exchange = true;
+</script>
+<script type="text/javascript" src="https://wprp.zemanta.com/static/js/loader.js?version=3.4.3" async=""></script>
+<link rel="stylesheet" href="./Работа с файлами в C#_files/vertical-m.css">
+
+<script type="text/javascript" async="" defer="" src="./Работа с файлами в C#_files/jscripts.php"></script> 
+<style type="text/css">
+			@media only screen and (min-width: 60em) {
+				#wrapper {
+					margin: 0;
+					width: 100%;
+					max-width: 100%;
+					background: none;
+				}
+				.container {
+					max-width: 1340px;
+					width: 92%;
+					margin: 0 auto;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				#wrap {
+					padding: 1.5em 0;
+				}
+			}
+			@media only screen and (max-width: 70em) {
+				.container {
+					width: 94%;
+				}
+			}
+			@media only screen and (max-width: 65em) {
+				.container {
+					width: 96%;
+				}
+			}
+			@media only screen and (max-width: 60em) {
+				.container {
+					width: 100%;
+				}
+				#wrap {
+					padding: 1.5em 1.5em 0;
+				}
+			}
+		</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+<!-- All in One SEO Pack 2.1.5 by Michael Torbert of Semper Fi Web Design[526,588] -->
+<meta name="description" content="Работа с файлами в C# - в данной статье мы разберем, как работать с файлами в C# на примере классов File и FileInfo.">
+
+<meta name="keywords" content="file c#, fileinfo c#, работа с файлами в c#">
+
+<link rel="canonical" href="https://alekseygulynin.ru/rabota-s-failami-c/">
+<!-- /all in one seo pack -->
+<link rel="stylesheet" type="text/css" href="./Работа с файлами в C#_files/shCore.css"><link rel="stylesheet" type="text/css" href="./Работа с файлами в C#_files/shThemeDefault.css"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<meta name="chromesniffer" id="chromesniffer_meta"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script><script type="text/javascript" charset="utf-8" async="" src="./Работа с файлами в C#_files/button.b74390cfaab5c0218a0e372047007e13.js.Без названия"></script></head>
+
+<body class="single single-post postid-1128 single-format-standard custom-background" style=""><div class="scroll-top-wrap"><div class="scroll-top-inner  " style="display: block;"><span class=" ">˄</span></div></div>
+
+<div id="wrapper" class="hfeed">
+	
+		<div id="header-wrap">
+		<img src="./Работа с файлами в C#_files/fon.jpg" id="bg">
+		<header id="header" class="container clearfix" role="banner" style="height: 160px;">
+
+			<!--<img src = "/wp-content/uploads/images/header.png" alt = "alekseygulynin.ru"/>-->
+
+		</header>
+	
+	</div>
+		
+	<div id="navi-wrap">
+		<h3 id="mainnav-icon">Меню</h3><nav id="mainnav" class="container clearfix" role="navigation">
+			<ul id="mainnav-menu" class="menu"><li id="menu-item-149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149"><a href="https://alekseygulynin.ru/">Главная</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://alekseygulynin.ru/about/">Об авторе</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="https://alekseygulynin.ru/vse-stati-sajta/">Все статьи сайта</a></li>
+<li id="menu-item-317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="https://alekseygulynin.ru/smysl-proekta/">Смысл проекта?</a></li>
+</ul>		</nav>
+	</div>
+	
+			
+	<div id="wrap" class="container">
+		
+		<section id="content" class="primary" role="main">
+		
+			<article id="post-1128" class="post-1128 post type-post status-publish format-standard has-post-thumbnail hentry category-osnovy-c tag-c">
+	
+		<h1 class="post-title">Работа с файлами в C#</h1>
+		
+		
+		<img width="600" height="280" src="./Работа с файлами в C#_files/rabota-s-failami-c-600x280.jpg" class="attachment-featured_image wp-post-image" alt="Работа с файлами в C#">			
+		<div class="entry clearfix">
+			<p>Всем доброго времени суток. На связи Алексей Гулынин. В прошлой статье вы узнали немного о том, что такое <a href="https://alekseygulynin.ru/testirovanie-v-visual-studio/" title="модульное тестирование в Visual Studio">модульное тестирование в Visual Studio</a>. В данной статье я бы хотел рассказать о <strong>работе с файлами на C#</strong>. Всю работу с файлами можно разделить на 2 группы: 1) это работа с файлами, как с элементами файловой системы, например, <span id="more-1128"></span>найти файл, получить список файлов в директории, узнать дату изменения файла, различные его атрибуты, расширение, скопировать или удалить файл, создать новый. 2) это работа с содержимым файла: прочитать файл или записать в него что-нибудь. </p>
+<p>Для выполнения всех этих операций существует несколько классов, расположенных в пространстве имён "System.IO".</p>
+<p>Существует 2 класса File и FileInfo, которые предназначены для работы с файлом, как с частью файловой системы. Здесь также есть несколько методов, которые позволяют работать с содержимым файла целиком. В простых случаях (когда размеры файла небольшие, скажем до 1МБ) файл можно полностью прочитать и сохранить в память.</p>
+<h5>Некоторые методы по работе с файлами:</h5>
+<ul>
+<li><span style="text-decoration:underline;">ReadAllText()</span>. Самая простая операция — это прочитать файл целиком. Данный метод является статическим. Здесь в качестве параметра можно указать полный путь к файлу. Когда указываем путь к файлу, не забываем экранировать символ "\".</li>
+<li><span style="text-decoration:underline;">ReadAllLines()</span>. Этот статический метод возвращает массив строк, т.е. читает файл построчно.</li>
+<li><span style="text-decoration:underline;">WriteAllText()</span>. Здесь в качестве параметра передаём строку, и эта строка целиком добавляется в файл с перезаписью содержимого файла.</li>
+<li><span style="text-decoration:underline;">AppendAllText()</span>. Здесь содержимое добавляется поверх существующего файла, без его перезаписи. </li>
+</ul>
+<p>Ниже приведен пример на эти методы. Для начала подготовим тестовый файл, который заполним названиями городов (Москва, Питер, Казань, Уфа, Стерлитамак). Имя каждого города находится на новой строке. Файл назовем "cities.txt" и расположим его в корне какого-нибудь диска (в моём случае — это диск "E"):</p>
+<div><div id="highlighter_50840" class="syntaxhighlighter  cpp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">using</code> <code class="cpp plain">System;</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">using</code> <code class="cpp plain">System.Text;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">using</code> <code class="cpp plain">System.IO;</code></div><div class="line number4 index3 alt1"><code class="cpp keyword bold">namespace</code> <code class="cpp plain">TestApplicationForStudy</code></div><div class="line number5 index4 alt2"><code class="cpp plain">{</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp keyword bold">class</code> <code class="cpp plain">Program</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">static</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">Main(string[] args)</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">string pathToFile = </code><code class="cpp string">"E:\\cities.txt"</code><code class="cpp plain">;</code></div><div class="line number11 index10 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// можно также указать вот так pathToFile = @"E:\cities.txt";</code></div><div class="line number12 index11 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// выведем содержимое файла целиком</code></div><div class="line number13 index12 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">string readAllFile = File.ReadAllText(pathToFile);</code></div><div class="line number14 index13 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.WriteLine(readAllFile); </code><code class="cpp comments">// выйдет весь файл</code></div><div class="line number15 index14 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">string[] readEveryLine = </code><code class="cpp keyword bold">new</code> <code class="cpp plain">string[5];</code></div><div class="line number16 index15 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// записываем в массив каждую строку файла</code></div><div class="line number17 index16 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">readEveryLine = File.ReadAllLines(pathToFile);</code></div><div class="line number18 index17 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// выводим содержимое массива</code></div><div class="line number19 index18 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">for</code> <code class="cpp plain">(</code><code class="cpp color1 bold">int</code> <code class="cpp plain">i = 0; i &lt; readEveryLine.Length; i++) </code></div><div class="line number20 index19 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.Write(readEveryLine[i] + </code><code class="cpp string">" | "</code><code class="cpp plain">);</code></div><div class="line number21 index20 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// Попробуем добавить новый город в наш файл</code></div><div class="line number22 index21 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// Данная команда перезатрёт наш файл, и в нём будет только "Нижний Новгород"</code></div><div class="line number23 index22 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">//File.WriteAllText(pathToFile, "Нижний Новгород");</code></div><div class="line number24 index23 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// Следующая команда допишет новый город в конец файла</code></div><div class="line number25 index24 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">File.AppendAllText(pathToFile, Environment.NewLine); </code><code class="cpp comments">// Добавим новую строку в наш файл</code></div><div class="line number26 index25 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">File.AppendAllText(pathToFile, </code><code class="cpp string">"Нижний Новгород"</code><code class="cpp plain">);</code></div><div class="line number27 index26 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.ReadLine();</code></div><div class="line number28 index27 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number29 index28 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number30 index29 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>То, что можно сделать с помощью класса "File", можно сделать и с помощью класса "FileInfo", и наоборот. Почему же их два? Методы класса "File" — статические, а методы класса "FileInfo" являются методами объекта. При работе с методами класса "File" первым параметром всегда указывается путь до файла. В случае "FileInfo" — это имя указывается один раз в конструкторе при создании объекта. Если нужно выполнить разовую операцию, то лучше использовать класс "File". В случае работы со многими файлами лучше использовать "FileInfo".</p>
+<p>Реализуем следующий алгоритм: необходимо вывести все файлы, даты изменения которых старше введенной пользователем даты. Будем рассматривать папку "C:\Windows\System32". В ней много файлов. Тут нам потребуется получить все файлы этой директории. Забегая вперед скажу, что это можно сделать с помощью метода "GetFiles()" класса "DirectoryInfo".</p>
+<div><div id="highlighter_34682" class="syntaxhighlighter  cpp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div><div class="line number36 index35 alt1">36</div><div class="line number37 index36 alt2">37</div><div class="line number38 index37 alt1">38</div><div class="line number39 index38 alt2">39</div><div class="line number40 index39 alt1">40</div><div class="line number41 index40 alt2">41</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">using</code> <code class="cpp plain">System;</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">using</code> <code class="cpp plain">System.Text;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">using</code> <code class="cpp plain">System.IO;</code></div><div class="line number4 index3 alt1"><code class="cpp keyword bold">namespace</code> <code class="cpp plain">TestApplicationForStudy</code></div><div class="line number5 index4 alt2"><code class="cpp plain">{</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp keyword bold">class</code> <code class="cpp plain">Program</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">static</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">Main(string[] args)</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">string pathToDirectory = @</code><code class="cpp string">"C:\Windows\System32"</code><code class="cpp plain">;</code></div><div class="line number11 index10 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// Получаем пользовательскую дату</code></div><div class="line number12 index11 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// Будем вводить в формате 27.04.2016 без проверки на корректность ввода</code></div><div class="line number13 index12 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.Write(</code><code class="cpp string">"Введите дату: "</code><code class="cpp plain">);</code></div><div class="line number14 index13 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">string userDate = Console.ReadLine();</code></div><div class="line number15 index14 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">userDate += </code><code class="cpp string">" 00:00:00"</code><code class="cpp plain">;</code></div><div class="line number16 index15 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.WriteLine(</code><code class="cpp string">"Вы ввели дату: {0}"</code><code class="cpp plain">, userDate);</code></div><div class="line number17 index16 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// сохраняем названия всех файлов в переменную allFiles (массив строк)</code></div><div class="line number18 index17 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">DirectoryInfo dI = </code><code class="cpp keyword bold">new</code> <code class="cpp plain">DirectoryInfo(pathToDirectory);</code></div><div class="line number19 index18 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">FileInfo[] allFiles = dI.GetFiles();</code></div><div class="line number20 index19 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">try</code></div><div class="line number21 index20 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number22 index21 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// В цикле пройдём по всем файлам и проверим их дату изменения</code></div><div class="line number23 index22 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">foreach (FileInfo fi in allFiles)</code></div><div class="line number24 index23 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number25 index24 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// Если дата изменения файла старше нашей</code></div><div class="line number26 index25 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">if</code> <code class="cpp plain">(fi.LastWriteTime &gt; DateTime.Parse(userDate))</code></div><div class="line number27 index26 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number28 index27 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// выводим этот файл</code></div><div class="line number29 index28 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.WriteLine(</code><code class="cpp string">"{0} | {1}"</code><code class="cpp plain">, fi.Name, fi.LastWriteTime.ToString());</code></div><div class="line number30 index29 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number31 index30 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number32 index31 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number33 index32 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">catch</code> <code class="cpp plain">(IOException ex)</code></div><div class="line number34 index33 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number35 index34 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.WriteLine(</code><code class="cpp string">"Произошла ошибка: {0}"</code><code class="cpp plain">, ex.Message);</code></div><div class="line number36 index35 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">} </code></div><div class="line number37 index36 alt2">&nbsp;</div><div class="line number38 index37 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">Console.ReadLine();</code></div><div class="line number39 index38 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number40 index39 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number41 index40 alt2"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p>Протестируйте работу данного скрипта.</p>
+<p>Напишем ещё несколько примеров на работу с файлами:</p>
+<ul>
+<li>Copy — копирование файла.</li>
+<li>Delete — удаление файла.</li>
+<li>Exists — проверка существования файла.</li>
+</ul>
+<p>Пример:</p>
+<div><div id="highlighter_159667" class="syntaxhighlighter  cpp"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">static</code> <code class="cpp keyword bold">void</code> <code class="cpp plain">Main(string[] args)</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">string pathToFile = @</code><code class="cpp string">"E:\cities.txt"</code><code class="cpp plain">;</code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp comments">// Скопируем наш файл на локальный диск C</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp comments">// true говорит о том, что файл будет перезаписан</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">File.Copy(pathToFile, @</code><code class="cpp string">"C:\cities.txt"</code><code class="cpp plain">, </code><code class="cpp keyword bold">true</code><code class="cpp plain">);</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp comments">// Проверим существует ли файл с помощью тернарного оператора</code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">string message = (File.Exists(pathToFile)) ? </code><code class="cpp string">"Файл существует"</code> <code class="cpp plain">: </code><code class="cpp string">"Файл не существует"</code><code class="cpp plain">;</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">Console.WriteLine(message);</code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp comments">// Удалим наш файл с диска C</code></div><div class="line number11 index10 alt2"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">File.Delete(@</code><code class="cpp string">"C:\cities.txt"</code><code class="cpp plain">);</code></div><div class="line number12 index11 alt1"><code class="cpp spaces">&nbsp;&nbsp;</code><code class="cpp plain">Console.ReadLine();</code></div><div class="line number13 index12 alt2"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+<p style="background: #c2d49d; border: 1px dashed #7d8284; font-weight: bold; padding:10px;">В качестве домашнего задания: переделайте последний пример только с использованием класса "FileInfo".</p>
+<p>В данной статье вы узнали, <strong>как работать с файлами в C#</strong>.</p>
+<p>На связи был Алексей Гулынин, оставляйте свои комментарии, увидимся в следующих статьях.</p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content"><h3 class="related_post_title">Ещё статьи...</h3><ul class="related_post wp_rp" style="visibility: visible"><li data-position="0" data-poid="in-967" data-post-type="none"><a href="https://alekseygulynin.ru/otladka-koda-v-visual-studio/" class="wp_rp_thumbnail"><img src="./Работа с файлами в C#_files/otladka-koda-v-visual-studio-150x150.jpg" alt="Отладка кода в Visual Studio" width="150" height="150"></a><a href="https://alekseygulynin.ru/otladka-koda-v-visual-studio/" class="wp_rp_title">Отладка кода в Visual Studio</a></li><li data-position="1" data-poid="in-421" data-post-type="none"><a href="https://alekseygulynin.ru/visual-studio/" class="wp_rp_thumbnail"><img src="./Работа с файлами в C#_files/visual-studio-150x150.jpg" alt="Visual Studio описание" width="150" height="150"></a><a href="https://alekseygulynin.ru/visual-studio/" class="wp_rp_title">Visual Studio описание</a></li><li data-position="2" data-poid="in-928" data-post-type="none"><a href="https://alekseygulynin.ru/chto-takoe-net-framework/" class="wp_rp_thumbnail"><img src="./Работа с файлами в C#_files/chto-takoe-net-framework-150x150.jpg" alt="Что такое .NET Framework?" width="150" height="150"></a><a href="https://alekseygulynin.ru/chto-takoe-net-framework/" class="wp_rp_title">Что такое .NET Framework?</a></li><li data-position="3" data-poid="in-971" data-post-type="none"><a href="https://alekseygulynin.ru/try-catch-c/" class="wp_rp_thumbnail"><img src="./Работа с файлами в C#_files/try-catch-c-150x150.jpg" alt="try catch c#" width="150" height="150"></a><a href="https://alekseygulynin.ru/try-catch-c/" class="wp_rp_title">try catch c#</a></li><li data-position="4" data-poid="in-346" data-post-type="none"><a href="https://alekseygulynin.ru/sozdanie-prilojenii/" class="wp_rp_thumbnail"><img src="./Работа с файлами в C#_files/sozdanie-prilojenii1-150x150.jpg" alt="Инструменты для построения .NET-приложений" width="150" height="150"></a><a href="https://alekseygulynin.ru/sozdanie-prilojenii/" class="wp_rp_title">Инструменты для построения .NET-приложений</a></li></ul></div></div>
+<!--noindex--><div style="clear:both;"><ul class="nostyle" style="float:right">
+			<li>
+                <div class="fb-like" data-href="https://alekseygulynin.ru/rabota-s-failami-c/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true">
+                </div>
+			</li>
+			<li>
+                <div>
+                    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./Работа с файлами в C#_files/tweet_button.4ed13d9ce94e60c41048ece32559b04c.ru.html" style="position: static; visibility: visible; width: 77px; height: 20px;" data-url="https://alekseygulynin.ru/rabota-s-failami-c/"></iframe>
+                </div>
+			</li><li><div id="0.02991245364315187" style="width: 180px; height: 20px; background: none; position: relative; clear: both;"><iframe name="fXD5736b" frameborder="0" src="./Работа с файлами в C#_files/widget_like.html" width="100%" height="20" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 20px; width: 180px; z-index: 150;"></iframe></div></li>
+						<script type="text/javascript">
+							<!--
+							    jQuery(document).on('vkapi_vk', function(){
+							        var temp = Math.random()%1;
+								    jQuery('#vkapi_like_1128_1756870650').attr('id',temp);
+									VK.Widgets.Like(temp, {
+										width: 1,
+										height: 20,
+										type: 'button',
+										verb: '0',
+										pageTitle: 'Работа с файлами в C#',
+										pageDescription: 'Всем доброго времени суток. На связи Алексей Гулынин. В прошлой статье вы узнали немного о том, что такое модульное тестирование в Visual S',
+										pageUrl: 'https://alekseygulynin.ru/rabota-s-failami-c/',
+										pageImage: '',
+										text: 'Всем доброго времени суток. На связи Алексей Гулынин. В прошлой статье вы узнали немного о том, что такое модульное тестирование в Visual S'
+									}, 1128);
+							    });
+							-->
+						</script></ul></div><br style="clear:both;"><!--/noindex-->			<div class="postmeta">		
+		<span class="meta-date">
+		Опубликовано <a href="https://alekseygulynin.ru/rabota-s-failami-c/" title="3:37 пп" rel="bookmark"><time datetime="2016-04-27T15:37:00+00:00">Апрель 27, 2016</time></a>		</span>
+		
+		<span class="meta-author sep">
+		от <a href="https://alekseygulynin.ru/author/admin/" title="Просмотр всех записей Алексей Гулынин" rel="author">Алексей Гулынин</a>		</span>
+
+			<span class="meta-comments sep">
+			<a href="https://alekseygulynin.ru/rabota-s-failami-c/#respond" title="Прокомментировать запись «Работа с файлами в C#»">Оставить комментарий</a>		</span>
+		</div>
+			<div style="float:left;" id="prev_single_article"><a href="https://alekseygulynin.ru/testirovanie-v-visual-studio/" rel="prev">&lt; Предыдущая статья</a></div>	
+			<div style="float:right;" id="post_single_article"><a href="https://alekseygulynin.ru/directory-c/" rel="next">Следующая статья &gt;</a></div>
+			<!-- <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alekseygulynin.ru/rabota-s-failami-c/"
+    dc:identifier="https://alekseygulynin.ru/rabota-s-failami-c/"
+    dc:title="Работа с файлами в C#"
+    trackback:ping="https://alekseygulynin.ru/rabota-s-failami-c/trackback/" />
+</rdf:RDF> -->
+			<div class="page-links"></div>			
+		</div>
+	</article>
+		<table id="vkapi_wrapper" style="width:auto; margin:10px auto 20px 0;" data-vkapi-notify="1128" data-vkapi-url="https://alekseygulynin.ru">
+                <tbody><tr><td style="font-weight:800; white-space:nowrap">
+                    Комментарии:
+                </td><td>
+			    <button style="white-space:nowrap" class="submit vk_recount" onclick="showVK()">
+			        ВКонтакте (0)
+			    </button>
+			</td><td>
+			    <button style="white-space:nowrap" class="submit" onclick="showWP()">
+			        Обычные (0)
+			    </button>
+			</td></tr></tbody></table>
+                <script type="text/javascript">
+                    // todo-dx: check all function is calling
+                   if (typeof window.webkitNotifications !== undefined ) {
+                    function vkapi_checkPermission() {
+                        if(window.webkitNotifications.checkPermission()==0){
+                            window.webkitNotifications.createNotification(
+                                'https://vk.com/images/lnkinner32.gif',
+                                'Успех',
+                                'Сообщения разрешены')
+                                .show();
+                            clearInterval(vkapi_interval);
+                        }
+                    }
+                    if(window.webkitNotifications.checkPermission()>0){
+                        var vkapi_interval = setInterval(vkapi_checkPermission,500);
+                    }
+                    function vkapi_requestPermission(){
+                        window.webkitNotifications.requestPermission();
+                        jQuery('button.vkapi_remove').remove();
+                    }
+                    function onChange(num,last_comment,data,hash){
+                        if (window.webkitNotifications.checkPermission() == 0) {
+                            last_comment = html_entity_decode(last_comment);
+                            Time = new Date();
+                            Hour = Time.getHours();
+                            Min = Time.getMinutes();
+                            Sec = Time.getSeconds();
+                            var notification = window.webkitNotifications.createNotification(
+                                'https://vk.com/images/lnkinner32.gif',
+                                'Время '+Hour+':'+Min+':'+Sec,
+                                last_comment);
+                            notification.show();
+                            document.getElementById('vkapi_sound').play();
+                            setTimeout(function(){notification.cancel()}, '10000');
+                        } else {
+                            jQuery('#vkapi')
+                                .append("<button class='submit' class='vkapi_remove'" +
+                                "onclick='vkapi_requestPermission()'>Разрешить всплывающие сообщения</button>");
+                        }
+                    }
+                   }
+
+                    function onChangeRecalc(num){
+                        jQuery('button.vk_recount').html('ВКонтакте ('+num+')');
+                    }
+                </script>
+			<div id="vkapi" onclick="showNotification()" style="width: 600px; height: 190px; background: none;"><iframe name="fXDce5df" frameborder="0" src="./Работа с файлами в C#_files/widget_comments.html" width="600" height="133" scrolling="no" id="vkwidget2" style="overflow: hidden; height: 190px;"></iframe></div>
+			<script type="text/javascript">
+				jQuery(document).on('vkapi_vk', function(){
+                    VK.Widgets.Comments(
+                        'vkapi', {
+                            width: 600,
+                            height: 0,
+                            limit: 30,
+                            attach: false,
+                            autoPublish: 1,
+                            mini: 1,
+                            pageUrl: 'https://alekseygulynin.ru/rabota-s-failami-c/'
+                        }, 1128);
+				});
+			</script>
+
+
+	<div id="comments" style="display: none;">
+	
+		
+													<div id="respond" class="comment-respond" style="display: none;">
+				<h3 id="reply-title" class="comment-reply-title">Добавить комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://alekseygulynin.ru/rabota-s-failami-c/#respond" style="display:none;">Отменить ответ</a></small></h3>
+									<form action="https://alekseygulynin.ru/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">Ваш e-mail не будет опубликован. Обязательные поля помечены <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Имя <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-url"><label for="url">Сайт</label> <input id="url" name="url" type="text" value="" size="30"></p>
+												<p class="comment-form-comment"><label for="comment">Комментарий</label> <div style="position: relative; z-index: 9999;"><div id="sm_list" class="sm_list" style="width:30px; height:30px; background:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/smile.gif) center center no-repeat" onmouseover="var el=this.childNodes[0];if( el.style.display == &#39;block&#39; )return;el.style.display=&#39;block&#39;;for( var i=0; i &lt; el.childNodes.length; i++ ){var l = el.childNodes[i];var bg = l.getAttribute(&#39;bg&#39;);if( bg )l.setAttribute( &#39;style&#39;, bg );}" onmouseout="this.childNodes[0].style.display = &#39;none&#39;"><div id="sm_container" class="sm_container"><div class="smiles_button" onclick="ksm_insert(&#39;:-)&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/smile.gif);" title=":-)"></div><div class="smiles_button" onclick="ksm_insert(&#39;:-(&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/sad.gif);" title=":-("></div><div class="smiles_button" onclick="ksm_insert(&#39;:-D&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/laugh.gif);" title=":-D"></div><div class="smiles_button" onclick="ksm_insert(&#39;*rofl*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/rofl.gif);" title="*rofl*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*blum*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/blum.gif);" title="*blum*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*kiss*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/kiss.gif);" title="*kiss*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*yes*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/yes.gif);" title="*yes*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*no*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/no.gif);" title="*no*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*good*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/good.gif);" title="*good*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*bad*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/bad.gif);" title="*bad*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*unknw*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/unknw.gif);" title="*unknw*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*sorry*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/sorry.gif);" title="*sorry*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*pardon*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/pardon.gif);" title="*pardon*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*wacko*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/wacko.gif);" title="*wacko*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*acute*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/acute.gif);" title="*acute*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*boast*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/boast.gif);" title="*boast*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*boredom*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/boredom.gif);" title="*boredom*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*dash*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/dash.gif);" title="*dash*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*search*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/search.gif);" title="*search*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*crazy*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/crazy.gif);" title="*crazy*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*yess*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/yess.gif);" title="*yess*"></div><div class="smiles_button" onclick="ksm_insert(&#39;*cool*&#39;, &#39;comment&#39;);" bg="background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/cool.gif);" title="*cool*"></div></div></div><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></div></p>												<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Отправить комментарий">
+							<input type="hidden" name="comment_post_ID" value="1128" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+							<script type="text/javascript">
+	// <![CDATA[
+	ref2xJS = escape( document[ 'referrer' ] );
+	document.write("<input type='hidden' name='ref2xJS' value='"+ref2xJS+"'>");
+	// ]]>
+	</script><input type="hidden" name="ref2xJS" value="https%3A//www.yandex.ru/clck/jsredir%3Fbu%3Duniq152275115490171916034%26from%3Dwww.yandex.ru%253Bsearch%252F%253Bweb%253B%253B%26text%3D%26etext%3D1748.XuqMHTwUDpfXgJaek1lqATeofGSZ96Gs_mRgE1rbqceMe2c1fKtBEKFpqIWUolNxIGExCg9725DMD-zg9BL-Jg.61c3dfbc61ec3a8bf8d9d110f7f43804193ec297%26uuid%3D%26state%3DPEtFfuTeVD5kpHnK9lio9dFa2ePbDzX7kPpTCH_rtQkH2bBEi5M--bO-cYhaTVRUk7cpnZKuUkn4Q-BcqowjUZf1Ip58d3CQ%26%26cst%3DAiuY0DBWFJ5Hyx_fyvalFOHk-3uo4wAw3Jj-xa2XRbF7TiejBzXzNtg_ly7f-9D28U_7V5cStkosEqfxLZJPf8490ItE7TA_nM-VzFaoxfcxq-aCIvfo9lTDcKthCV4fIcHvQcMuozWbHuLmYgSY0wZ8oUX_5SHIf_U295vrT2sX43f79SfGVybj_UtGtpQ7vggUy8RKXRCE4JLqJ1rFhjawmFN5tfxPFMmZa5h1oySZ0ICddr0zS3xraDFkRPLbcUBl2aN9nbmm-0J2j0iK_lhYyRFT3Pf87jNGdvhai2I-R9KA8kEOPGHy4bjcIYnfP2Q0eMYt89S1Ao0Gpe5KFaVS5W8P39Q5sq4fIzj7dTdaTzgzqehd2FReGbEyTZc8O4cps2WmY1H8t7siqYRnjg%2C%2C%26data%3DUlNrNmk5WktYejY4cHFySjRXSWhXRWY5M3pMMjluLWZwQWNmdW43YTJiVEg4bllkNDRlSkM2SU9FWEhyYzJRZDJQcDlDRVpEejhWdGpURmlnMldtaWxnNEY1SHJ0VFFnNlByZm9qMzBubndLV3lobDRVZV9lZGp2UEZjVENhMzR3bUlJNWNscnAydyw%2C%26sign%3D102211b0b5468d816b2527f554aaab89%26keyno%3D0%26b64e%3D2%26ref%3DorjY4mGPRjlSKyJlbRuxUg7kv3-HD3rXBde6r9T1920%2C%26l10n%3Dru%26cts%3D1522965098557%26mc%3D4.740197919409106">
+    <noscript>&lt;input type="hidden" name="JSONST" value="NS1"&gt;</noscript>
+
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;">
+	<label for="subscribe">Уведомить меня о новых комментариях по почте</label>
+	</p>
+
+
+<noscript>&lt;p&gt;&lt;strong&gt;Currently you have JavaScript disabled. In order to post comments, please make sure JavaScript and Cookies are enabled, and reload the page.&lt;/strong&gt; &lt;a href="http://enable-javascript.com/" rel="nofollow external" &gt;Click here for instructions&lt;/a&gt; on how to enable JavaScript in your browser.&lt;/p&gt;</noscript>
+<input type="hidden" name="48ed2d524615011f46f57ba9efaed312" value="436a694dcc16c228d7b24b0bdf697467">
+					</form>
+							</div><!-- #respond -->
+					
+	</div>
+
+		</section>
+		
+		
+<section id="sidebar" class="secondary clearfix" role="complementary">
+	
+	<aside id="search-3" class="widget widget_search">
+	<form role="search" method="get" id="searchform" action="https://alekseygulynin.ru/">
+		<input type="text" value="" name="s" id="s" placeholder="Искать...">
+		<input type="submit" id="searchsubmit" value="">
+	</form>
+</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widgettitle">Статьи и уроки</h3>		<ul>
+	<li class="cat-item cat-item-26"><a href="https://alekseygulynin.ru/category/css/" title="Просмотреть все записи в рубрике «CSS»">CSS</a> (11)
+</li>
+	<li class="cat-item cat-item-28"><a href="https://alekseygulynin.ru/category/css3/" title="Просмотреть все записи в рубрике «CSS3»">CSS3</a> (1)
+</li>
+	<li class="cat-item cat-item-30"><a href="https://alekseygulynin.ru/category/entity-framework/" title="Просмотреть все записи в рубрике «Entity Framework»">Entity Framework</a> (19)
+</li>
+	<li class="cat-item cat-item-5"><a href="https://alekseygulynin.ru/category/html5/" title="Просмотреть все записи в рубрике «HTML5»">HTML5</a> (7)
+</li>
+	<li class="cat-item cat-item-32"><a href="https://alekseygulynin.ru/category/java/" title="Просмотреть все записи в рубрике «Java»">Java</a> (7)
+</li>
+	<li class="cat-item cat-item-1"><a href="https://alekseygulynin.ru/category/php/" title="Просмотреть все записи в рубрике «PHP»">PHP</a> (19)
+</li>
+	<li class="cat-item cat-item-11"><a href="https://alekseygulynin.ru/category/vba/" title="Просмотреть все записи в рубрике «VBA»">VBA</a> (4)
+</li>
+	<li class="cat-item cat-item-34"><a href="https://alekseygulynin.ru/category/wcf/" title="Просмотреть все записи в рубрике «WCF»">WCF</a> (8)
+</li>
+	<li class="cat-item cat-item-12"><a href="https://alekseygulynin.ru/category/osnovy-c/" title="Просмотреть все записи в рубрике «Основы C#»">Основы C#</a> (69)
+</li>
+	<li class="cat-item cat-item-4"><a href="https://alekseygulynin.ru/category/osnovi_html/" title="Просмотреть все записи в рубрике «Основы HTML»">Основы HTML</a> (15)
+</li>
+	<li class="cat-item cat-item-7"><a href="https://alekseygulynin.ru/category/osnovi_javascript/" title="Просмотреть все записи в рубрике «Основы JavaScript»">Основы JavaScript</a> (26)
+</li>
+		</ul>
+</aside><aside id="yop_poll_widget-3" class="widget Yop Poll Widget"><h3 class="widgettitle">Голосование</h3><style type="text/css">#yop-poll-container-2_yp5ac69a6f70806 {
+	width:90%;
+	background:#fff;
+	padding:10px;
+    color:#555;
+    overflow:hidden;
+    font-size:12px;
+}
+#yop-poll-name-2_yp5ac69a6f70806 {
+	font-size:14px;
+	font-weight:bold;
+}
+
+#yop-poll-question-2_yp5ac69a6f70806 {
+	font-size:14px;
+	margin:5px 0px;
+}
+#yop-poll-answers-2_yp5ac69a6f70806 {  }
+#yop-poll-answers-2_yp5ac69a6f70806 ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#yop-poll-answers-2_yp5ac69a6f70806 ul li { 
+	font-style:normal;
+	margin:0px 0px 10px 0px;
+	padding:0px;
+	font-size:12px;
+}
+#yop-poll-answers-2_yp5ac69a6f70806 ul li input { 
+	margin:0px; 
+	float:none;
+}
+#yop-poll-answers-2_yp5ac69a6f70806 ul li label { 
+	margin:0px; 
+	font-style:normal; 
+	font-weight:normal; 
+	font-size:12px; 
+	float:none;
+}
+.yop-poll-results-2_yp5ac69a6f70806 {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+#yop-poll-custom-2_yp5ac69a6f70806 {  }
+#yop-poll-custom-2_yp5ac69a6f70806 ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#yop-poll-custom-2_yp5ac69a6f70806 ul li { 
+	padding:0px;
+	margin:0px;	
+	font-size:14px;
+}
+#yop-poll-container-2_yp5ac69a6f70806 input[type='text'] { margin:0px 0px 5px 0px; padding:2%; width:96%; text-indent:2%; font-size:12px; }
+
+#yop-poll-captcha-input-div-2_yp5ac69a6f70806 {
+margin-top:5px;
+}
+#yop-poll-captcha-helpers-div-2_yp5ac69a6f70806 {
+width:30px;
+float:left;
+margin-left:5px;
+height:0px;
+}
+
+#yop-poll-captcha-helpers-div-2_yp5ac69a6f70806 img {
+margin-bottom:2px;
+}
+
+#yop-poll-captcha-image-div-2_yp5ac69a6f70806 {
+margin-bottom:5px;
+}
+
+#yop_poll_captcha_image_2_yp5ac69a6f70806 {
+float:left;
+}
+
+.yop_poll_clear {
+clear:both;
+}
+
+#yop-poll-vote-2_yp5ac69a6f70806 {
+
+}
+.yop-poll-results-bar-2_yp5ac69a6f70806 { background:#f5f5f5; height:10px;  }
+.yop-poll-results-bar-2_yp5ac69a6f70806 div { background:#555; height:10px; }
+#yop-poll-vote-2_yp5ac69a6f70806 div#yop-poll-vote-2_yp5ac69a6f70806 button { float:left; }
+#yop-poll-vote-2_yp5ac69a6f70806 div#yop-poll-results-2_yp5ac69a6f70806 {
+    float: right;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    width: auto;
+}
+#yop-poll-vote-2_yp5ac69a6f70806 div#yop-poll-results-2_yp5ac69a6f70806 a { color:#555; text-decoration:underline; font-size:12px;}
+#yop-poll-vote-2_yp5ac69a6f70806 div#yop-poll-back-2_yp5ac69a6f70806 a { color:#555; text-decoration:underline; font-size:12px;}
+#yop-poll-vote-2_yp5ac69a6f70806 div { float:left; width:100%; }
+
+#yop-poll-container-error-2_yp5ac69a6f70806 {
+	font-size:12px;
+	font-style:italic;
+	color:red;
+	text-transform:lowercase;
+}
+
+#yop-poll-container-success-2_yp5ac69a6f70806 {
+	font-size:12px;
+	font-style:italic;
+	color:green;
+}</style><div id="yop-poll-container-2_yp5ac69a6f70806" class="yop-poll-container"><div id="yop-poll-container-success-2_yp5ac69a6f70806" class="yop-poll-container-success"></div><div id="yop-poll-container-error-2_yp5ac69a6f70806" class="yop-poll-container-error"></div><form id="yop-poll-form-2_yp5ac69a6f70806" class="yop-poll-forms"><div id="yop-poll-name-2_yp5ac69a6f70806" class="yop-poll-name">Какие темы вам более всего интересны?</div>
+	<div id="yop-poll-question-2_yp5ac69a6f70806" class="yop-poll-question">Какие темы вам более всего интересны?</div>
+	<div id="yop-poll-answers-2_yp5ac69a6f70806" class="yop-poll-answers">
+	<ul>
+		
+		<li class="yop-poll-li-answer-2_yp5ac69a6f70806" style="width: 223px; float: left;">
+			<input type="radio" value="5" name="yop_poll_answer" id="yop-poll-answer-2_yp5ac69a6f70806-5"> 
+			<label for="yop-poll-answer-2_yp5ac69a6f70806-5">HTML, HTML5</label>
+			<span class="yop-poll-results-text-2_yp5ac69a6f70806"></span>
+			
+		</li>
+		
+		<li class="yop-poll-li-answer-2_yp5ac69a6f70806" style="width: 223px; float: left;">
+			<input type="radio" value="6" name="yop_poll_answer" id="yop-poll-answer-2_yp5ac69a6f70806-6"> 
+			<label for="yop-poll-answer-2_yp5ac69a6f70806-6">CSS, CSS3</label>
+			<span class="yop-poll-results-text-2_yp5ac69a6f70806"></span>
+			
+		</li>
+		
+		<li class="yop-poll-li-answer-2_yp5ac69a6f70806" style="width: 223px; float: left;">
+			<input type="radio" value="7" name="yop_poll_answer" id="yop-poll-answer-2_yp5ac69a6f70806-7"> 
+			<label for="yop-poll-answer-2_yp5ac69a6f70806-7">JavaScript, JQuery</label>
+			<span class="yop-poll-results-text-2_yp5ac69a6f70806"></span>
+			
+		</li>
+		
+		<li class="yop-poll-li-answer-2_yp5ac69a6f70806" style="width: 223px; float: left;">
+			<input type="radio" value="8" name="yop_poll_answer" id="yop-poll-answer-2_yp5ac69a6f70806-8"> 
+			<label for="yop-poll-answer-2_yp5ac69a6f70806-8">PHP</label>
+			<span class="yop-poll-results-text-2_yp5ac69a6f70806"></span>
+			
+		</li>
+		
+		<li class="yop-poll-li-answer-2_yp5ac69a6f70806" style="width: 223px; float: left;">
+			<input type="radio" value="9" name="yop_poll_answer" id="yop-poll-answer-2_yp5ac69a6f70806-9"> 
+			<label for="yop-poll-answer-2_yp5ac69a6f70806-9">C#</label>
+			<span class="yop-poll-results-text-2_yp5ac69a6f70806"></span>
+			
+		</li>
+		
+		<li class="yop-poll-li-answer-2_yp5ac69a6f70806" style="width: 223px; float: left;">
+			<input type="radio" value="10" name="yop_poll_answer" id="yop-poll-answer-2_yp5ac69a6f70806-10"> 
+			<label for="yop-poll-answer-2_yp5ac69a6f70806-10">VBA</label>
+			<span class="yop-poll-results-text-2_yp5ac69a6f70806"></span>
+			
+		</li>
+		       
+		
+	</ul>
+</div>
+<div id="yop-poll-custom-2_yp5ac69a6f70806">
+	<ul>
+		
+		</ul>
+</div>    
+
+<div id="yop-poll-vote-2_yp5ac69a6f70806" class="yop-poll-footer">
+	<div><button class="yop_poll_vote_button" id="yop_poll_vote-button-2_yp5ac69a6f70806" onclick="yop_poll_register_vote(&#39;2&#39;, &#39;widget&#39;, &#39;_yp5ac69a6f70806&#39;); return false;">Голосовать</button></div>
+	<div id="yop-poll-results-2_yp5ac69a6f70806"><a href="javascript:void(0)" class="yop_poll_result_link" id="yop_poll_result_link2_yp5ac69a6f70806" onclick="yop_poll_view_results(&#39;2&#39;, &#39;widget&#39;, &#39;_yp5ac69a6f70806&#39;)">Показать результаты</a></div>
+	<div></div>   <div>Всего голосов 1221</div>
+</div><input type="hidden" id="yop-poll-tr-id-2_yp5ac69a6f70806" name="yop_poll_tr_id" value=""><input type="hidden" id="yop-poll-nonce-2_yp5ac69a6f70806" name="yop-poll-nonce-2_yp5ac69a6f70806" value="9dabcb9d6b"></form></div></aside>
+	</section>
+	</div>
+	
+		
+				<div id="footer-wrap">
+			
+			<footer id="footer" class="container clearfix" role="contentinfo">
+				Copyright © 2014 - 2017. Блог ведёт: Гулынин Алексей Геннадьевич.			<br><br>
+			<div style="float:left;padding-right:10px;visibility:hidden;width:0px;height:0px;" id="live_int">
+				<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=33483603&amp;from=informer" target="_blank" rel="nofollow"><img src="./Работа с файлами в C#_files/3_0_83E268FF_63C248FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:33483603,lang:&#39;ru&#39;});return false}catch(e){}"></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33483603 = new Ya.Metrika({ id:33483603, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/33483603" alt="" /&gt;&lt;/div&gt;</noscript> <!-- /Yandex.Metrika counter -->
+			</div>
+			<p>Уже <span id="life_site" style="color: #e84747; font-size: 120%; font-weight: bold; text-shadow:1px 1px 1px #fff;">1412 дней</span>, как я веду свой блог.</p>
+			</footer>
+		</div>
+			
+</div><!-- end #wrapper -->
+
+<div id="vkapi_body">            <div id="vk_api_transport" style="position: absolute; top: -10000px;"><script type="text/javascript" src="./Работа с файлами в C#_files/openapi.js.Без названия" async=""></script></div>
+            <script type="text/javascript">
+                jQuery(function ($) {
+                    window.vkAsyncInit = function () {
+                        VK.init({
+                            apiId: 4396053
+                        });
+                        VK.Observer.subscribe('widgets.comments.new_comment', onChangePlusVK);
+                        VK.Observer.subscribe('widgets.comments.delete_comment', onChangeMinusVK);
+                        $(document).trigger('vkapi_vk');
+                    };
+
+                    setTimeout(function () {
+                        var el = document.createElement("script");
+                        el.type = "text/javascript";
+                        el.src = "https://vk.com/js/api/openapi.js";
+                        el.async = true;
+                        document.getElementById("vk_api_transport").appendChild(el);
+                    }, 0);
+                });
+            </script>
+                <script type="text/javascript">
+            !function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.async = true;
+                    js.src = "//platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+        </script>
+    </div>		<!-- Kama WP Smiles -->
+		<script type="text/javascript">			
+			function ksm_insert(aTag, txtr_id){var tx = document.getElementById( txtr_id );tx.focus();aTag = ' ' + aTag + ' ';if(typeof tx.selectionStart != 'undefined') {var start = tx.selectionStart;var end = tx.selectionEnd;var insText = tx.value.substring(start, end);tx.value = tx.value.substr(0, start) +  aTag  + tx.value.substr(end);var pos = start + aTag.length;tx.selectionStart = pos;tx.selectionEnd = pos;}else if(typeof document.selection != 'undefined') {var range = document.selection.createRange();range.text = aTag;}document.getElementById('sm_container').style.display = 'none';if( typeof tinyMCE != 'undefined' )tinyMCE.execCommand("mceInsertContent", false, aTag);}			
+			var tx = document.getElementById( 'comment' );
+			if( tx ){
+				var
+				txNext = tx.nextSibling,
+				txParent = tx.parentNode,
+				txWrapper = document.createElement('DIV');
+				
+				txWrapper.innerHTML = '<div id=\"sm_list\" class=\"sm_list\" style=\"width:30px; height:30px; background:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/smile.gif) center center no-repeat\" onmouseover=\"var el=this.childNodes[0];if( el.style.display == \'block\' )return;el.style.display=\'block\';for( var i=0; i < el.childNodes.length; i++ ){var l = el.childNodes[i];var bg = l.getAttribute(\'bg\');if( bg )l.setAttribute( \'style\', bg );}\" onmouseout=\"this.childNodes[0].style.display = \'none\'\"><div id=\"sm_container\" class=\"sm_container\"><div class=\"smiles_button\" onclick=\"ksm_insert(\':-)\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/smile.gif);\" title=\":-)\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\':-(\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/sad.gif);\" title=\":-(\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\':-D\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/laugh.gif);\" title=\":-D\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*rofl*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/rofl.gif);\" title=\"*rofl*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*blum*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/blum.gif);\" title=\"*blum*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*kiss*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/kiss.gif);\" title=\"*kiss*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*yes*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/yes.gif);\" title=\"*yes*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*no*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/no.gif);\" title=\"*no*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*good*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/good.gif);\" title=\"*good*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*bad*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/bad.gif);\" title=\"*bad*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*unknw*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/unknw.gif);\" title=\"*unknw*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*sorry*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/sorry.gif);\" title=\"*sorry*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*pardon*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/pardon.gif);\" title=\"*pardon*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*wacko*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/wacko.gif);\" title=\"*wacko*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*acute*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/acute.gif);\" title=\"*acute*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*boast*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/boast.gif);\" title=\"*boast*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*boredom*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/boredom.gif);\" title=\"*boredom*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*dash*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/dash.gif);\" title=\"*dash*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*search*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/search.gif);\" title=\"*search*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*crazy*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/crazy.gif);\" title=\"*crazy*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*yess*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/yess.gif);\" title=\"*yess*\"></div><div class=\"smiles_button\" onclick=\"ksm_insert(\'*cool*\', \'comment\');\" bg=\"background-image:url(https://alekseygulynin.ru/wp-content/plugins/kama-wp-smile/smiles/cool.gif);\" title=\"*cool*\"></div></div></div>';
+				txWrapper.style.position = 'relative';
+				txWrapper.style.zIndex = '9999';
+				txWrapper.appendChild(tx);
+				txWrapper = txParent.insertBefore(txWrapper, txNext);			
+			}
+		</script>
+		<!-- End Kama WP Smiles -->
+		<script type="text/javascript">jQuery(function(){showVK(0,0)});</script>
+                <audio id="vkapi_sound" preload="auto" style="display: none; visibility: hidden;">
+				    <source src="https://vk.com/mp3/bb2.mp3">
+			    </audio>
+        <meta property="vk:app_id" content="4396053">
+<script type="text/javascript" src="./Работа с файлами в C#_files/shCore.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/shBrushCpp.js.Без названия"></script>
+<script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://alekseygulynin.ru/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://alekseygulynin.ru/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<link rel="stylesheet" id="scroll_to_top_button_style-css" href="./Работа с файлами в C#_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="yop-poll-public-css" href="./Работа с файлами в C#_files/yop-poll-public.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var scrollTopParams = {"scheme":"dark","size":"large"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/scroll-to-top.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/jquery.popupWindow.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/admin-ajax.php"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var yop_poll_public_config_general = {"ajax":{"url":"https:\/\/alekseygulynin.ru\/wp-admin\/admin-ajax.php","vote_action":"yop_poll_do_vote","yop_poll_show_vote_options":"yop_poll_show_vote_options","captcha_action":"yop_poll_show_captcha","view_results_action":"yop_poll_view_results","back_to_vote_action":"yop_poll_back_to_vote","is_wordpress_user_action":"yop_poll_is_wordpress_user"},"pro":{"api_key":"","pro_user":"no","api_server_url":"http:\/\/www.yop-poll.com\/pro","pro_token":"53a62cec7d1f6844216a5aca077b9a53"},"yop_poll_version":"4.9.1","vote_with_wordpress_login_url":"https:\/\/alekseygulynin.ru\/wp-login.php?redirect_to=https%3A%2F%2Falekseygulynin.ru%2Fwp-admin%2Fadmin-ajax.php%3Faction%3Dyop_poll_set_wordpress_vote","vote_with_facebook_ajax_url":"https:\/\/alekseygulynin.ru\/wp-admin\/admin-ajax.php?action=yop_poll_set_wordpress_vote"};
+var yop_poll_public_config_2_yp5ac69a6f70806 = {"poll_options":{"vote_permisions":"guest-registered","vote_permisions_facebook_label":"Vote as Facebook User","vote_permisions_wordpress_label":"Vote as Wordpress User","vote_permisions_anonymous_label":"Vote as Anonymous User","vote_permisions_types":0,"share_after_vote":"no","share_name":"","share_caption":"","share_description":"","share_picture":"","share_question":"\u041a\u0430\u043a\u0438\u0435 \u0442\u0435\u043c\u044b \u0432\u0430\u043c \u0431\u043e\u043b\u0435\u0435 \u0432\u0441\u0435\u0433\u043e \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b?","share_poll_name":"\u041a\u0430\u043a\u0438\u0435 \u0442\u0435\u043c\u044b \u0432\u0430\u043c \u0431\u043e\u043b\u0435\u0435 \u0432\u0441\u0435\u0433\u043e \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b?","share_link":"https:\/\/alekseygulynin.ru","answers":[{"id":"5","value":"HTML, HTML5","type":"default"},{"id":"6","value":"CSS, CSS3","type":"default"},{"id":"7","value":"JavaScript, JQuery","type":"default"},{"id":"8","value":"PHP","type":"default"},{"id":"9","value":"C#","type":"default"},{"id":"10","value":"VBA","type":"default"}],"redirect_after_vote":"no","redirect_after_vote_url":""},"loading_image_src":"https:\/\/alekseygulynin.ru\/wp-content\/plugins\/yop-poll\/images\/loading36x36.gif","loading_image_alt":"Loading"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/yop-poll-public.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/yop-poll-json2.js.Без названия"></script>
+<script type="text/javascript" src="./Работа с файлами в C#_files/yop-poll-jquery.base64.min.js.Без названия"></script>
+        <style type="text/css">
+            ul.nostyle,
+            ul.nostyle li {
+                list-style: none;
+                background: none;
+            }
+
+            ul.nostyle li {
+                height: 20px;
+                line-height: 20px;
+                padding: 5px;
+                margin: 0;
+                /*display: inline-block;*/
+                float: left;
+            }
+
+            ul.nostyle a {
+                border: none !important;
+            }
+
+            ul.nostyle li div table {
+                margin: 0;
+                padding: 0;
+            }
+
+            .vkapishare {
+                padding: 0 3px 0 0;
+            }
+
+            .vkapishare td,
+            .vkapishare tr {
+                border: 0 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                vertical-align: top !important;
+            }
+
+            /*.fb-like span {*/
+            /*overflow:visible !important;*/
+            /*width:480px !important;*/
+            /*margin-right:-375px;*/
+            /*}*/
+        </style>
+    
+<script type="text/javascript">
+    var start = new Date('May 25, 2014');
+    var end = new Date();
+    var life = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+    var suffix = new Array("день", "дня", "дней");
+    var keys = [2, 0, 1, 1, 1, 2];
+    var mod = life % 100;
+    var suffix_key = mod > 4 && mod < 20 ? 2 : keys[Math.min(mod%10, 5)];
+    //$("#life_site").text(life + " " + suffix[suffix_key]);
+    document.getElementById("life_site").innerHTML = life + " " + suffix[suffix_key];
+</script>	
+<script>
+$(document).ready(function(a){
+	a = $(window).width();
+	if (a < 1340 && a > 1240) $("header").css("height","185px");
+	if (a <= 1240 && a > 1024) $("header").css("height","160px");
+	if (a <= 1024 && a > 930) $("header").css("height","140px");
+	if (a <= 930 && a > 800) $("header").css({'height':'120px','padding':'0px'});
+	if (a <= 800 && a > 600) $("header").css({'height':'105px','padding':'0px'});
+	if (a <= 600 && a > 360) $("header").css({'height':'70px','padding':'0px'});
+	if (a <= 360) {$("header").css({'height':'55px','padding':'0px'}); $("#wp_rp_first").hide();$("#vkapi").css("width","330px");}
+});
+$(window).resize(function(){
+	a = $(window).width();
+	if (a < 1340 && a > 1240) $("header").css("height","185px");
+	if (a <= 1240 && a > 1024) $("header").css("height","160px");
+	if (a <= 1024 && a > 930) $("header").css("height","140px");
+	if (a <= 930 && a > 800) $("header").css({'height':'120px','padding':'0px'});
+	if (a <= 800 && a > 600) $("header").css({'height':'105px','padding':'0px'});
+	if (a <= 600 && a > 360) $("header").css({'height':'70px','padding':'0px'});
+	if (a <= 360) {$("header").css({'height':'55px','padding':'0px'}); $("#wp_rp_first").hide();$("#vkapi").css("width","330px");}
+});
+$(document).ready(function(){
+	if ($("#prev_single_article").text() == "") $("#prev_single_article").hide();
+	if ($("#post_single_article").text() == "") $("#post_single_article").hide();
+}); 
+</script>
+	<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Работа с файлами в C#_files/widget_iframe.4ed13d9ce94e60c41048ece32559b04c.html" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Работа с файлами в C#_files/saved_resource.html"></iframe></body></html>

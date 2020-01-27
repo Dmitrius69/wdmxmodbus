@@ -1,33 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="wdmxmodbus.Form1">
-    <Position X="1" Y="1.5" Width="1.5" />
+    <Position X="1.75" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AGAAIABAECAAAACACACAAIGCDMw7AQAAiOBKACAgAgA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="wdmxmodbus.Program" Collapsed="true">
-    <Position X="1" Y="0.5" Width="1.5" />
+  <Class Name="wdmxmodbus.Program">
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="wdmxmodbus.Properties.Resources" Collapsed="true">
+  <Class Name="wdmxmodbus.Properties.Resources">
     <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="wdmxmodbus.Properties.Settings" Collapsed="true">
-    <Position X="8" Y="1.25" Width="1.5" />
+    <Position X="8" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="wdmxmodbus.Hexagon">
-    <Position X="3" Y="1.5" Width="1.5" />
+    <Position X="5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAChAAAggCAAABACAAIIAAAAAAUAABBAAEgAAQABAAA=</HashCode>
       <FileName>Hexagon.cs</FileName>

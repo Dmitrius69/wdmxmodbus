@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenAL;
+using OpenTK.Audio.OpenAL;
 using System.Windows.Forms;
 
 namespace wdmxmodbus
@@ -49,6 +51,7 @@ namespace wdmxmodbus
             canDraw = false;
             Application.Idle += new EventHandler(mIdle);
             
+
         }
 
         //рисуем сетку
@@ -162,25 +165,36 @@ namespace wdmxmodbus
 
         }
 
+
+        //функцию доработать , сейчас не работает корректно 09.04.2018
         private void onResizepBox1(object sender, EventArgs e)
         {
-            buffer = new Bitmap(pBox1.Width, pBox1.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            //вносим изменения в размер отображаемой картинки 
+            //получаем размер родного gbox и после этого погоняем размер нашей картинки
+            int h = groupBox1.Height;
+            int w = groupBox1.Width;
+            h = h - 6; //размеры вычисленны эмпирически 
+            w = w - 19;
+            buffer = new Bitmap(w, h, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
             drawMain(buffer);
 
-            Graphics g = Graphics.FromImage(buffer);
+            using (Graphics g = Graphics.FromImage(buffer))
+            {
+                pBox1.Width = w;
+                pBox1.Height = h;
+                g.DrawString(String.Format("RESIZE PBOX EVENT {0} {1}", pBox1.Width, pBox1.Height), new Font(FontFamily.GenericMonospace, 14), new SolidBrush(Color.Red), xglob, yglob);
 
-            g.DrawString(String.Format("RESIZE PBOX EVENT {0} {1}", pBox1.Width, pBox1.Height), new Font(FontFamily.GenericMonospace, 14), new SolidBrush(Color.Red), xglob, yglob);
 
-
-            pBox1.Image = buffer;
-
-            g.Dispose();
+                pBox1.Image = buffer;
+            }
+            groupBox1.Invalidate();
+            //g.Dispose();
         }
 
         private void onResizegBox(object sender, EventArgs e)
         {
             // MessageBox.Show("RESIZE gBox");
-            pBox1.Dock = DockStyle.Fill;
+            //pBox1.Dock = DockStyle.Fill;
         }
 
         private void pBox1_MouseDown(object sender, MouseEventArgs e)
